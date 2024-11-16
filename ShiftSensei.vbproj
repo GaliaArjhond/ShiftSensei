@@ -21,6 +21,9 @@
     <Compile Update="Admin_CreateShift.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Admin_Schedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
