@@ -1,4 +1,4 @@
-﻿Public Class Admin_DB
+﻿Public Class Admin_Nurse
     Private Sub btncreateShift_Click(sender As Object, e As EventArgs) Handles btncreateShift.Click
         Admin_CreateShift.Show()
         Me.Hide()
