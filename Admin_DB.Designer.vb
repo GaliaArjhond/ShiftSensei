@@ -23,28 +23,29 @@ Partial Class Admin_DB
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        Button5 = New Button()
-        Button6 = New Button()
-        Button7 = New Button()
+        btnlogout = New Button()
         Button8 = New Button()
+        btnaccount = New Button()
+        btnprofile = New Button()
+        btnreport = New Button()
+        btnnurse = New Button()
+        btnschedule = New Button()
+        btncreateShift = New Button()
+        btndashboard = New Button()
         Panel2 = New Panel()
         Label1 = New Label()
         Panel3 = New Panel()
-        Panel4 = New Panel()
-        Panel6 = New Panel()
-        Panel7 = New Panel()
+        lbltotalNurse = New Label()
         Label2 = New Label()
+        Panel4 = New Panel()
+        lbltotalDuty = New Label()
         Label3 = New Label()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
+        Panel6 = New Panel()
         Label8 = New Label()
+        lbltotalActive = New Label()
+        Panel7 = New Panel()
         Label9 = New Label()
+        lbltotalOpen = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -56,117 +57,34 @@ Partial Class Admin_DB
         ' Panel1
         ' 
         Panel1.BackColor = Color.RoyalBlue
+        Panel1.Controls.Add(btnlogout)
         Panel1.Controls.Add(Button8)
-        Panel1.Controls.Add(Button7)
-        Panel1.Controls.Add(Button6)
-        Panel1.Controls.Add(Button5)
-        Panel1.Controls.Add(Button4)
-        Panel1.Controls.Add(Button3)
-        Panel1.Controls.Add(Button2)
-        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(btnaccount)
+        Panel1.Controls.Add(btnprofile)
+        Panel1.Controls.Add(btnreport)
+        Panel1.Controls.Add(btnnurse)
+        Panel1.Controls.Add(btnschedule)
+        Panel1.Controls.Add(btncreateShift)
+        Panel1.Controls.Add(btndashboard)
         Panel1.Location = New Point(-10, -13)
         Panel1.Margin = New Padding(4, 3, 4, 3)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(294, 749)
         Panel1.TabIndex = 0
         ' 
-        ' Button1
+        ' btnlogout
         ' 
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ButtonFace
-        Button1.Location = New Point(4, 173)
-        Button1.Margin = New Padding(4, 3, 4, 3)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(290, 50)
-        Button1.TabIndex = 0
-        Button1.Text = "Dashboard"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = SystemColors.ButtonFace
-        Button2.Location = New Point(4, 230)
-        Button2.Margin = New Padding(4, 3, 4, 3)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(290, 50)
-        Button2.TabIndex = 1
-        Button2.Text = "Create Shift"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Button3
-        ' 
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = SystemColors.ButtonFace
-        Button3.Location = New Point(4, 287)
-        Button3.Margin = New Padding(4, 3, 4, 3)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(290, 50)
-        Button3.TabIndex = 2
-        Button3.Text = "Schedule"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' Button4
-        ' 
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = SystemColors.ButtonFace
-        Button4.Location = New Point(4, 344)
-        Button4.Margin = New Padding(4, 3, 4, 3)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(290, 50)
-        Button4.TabIndex = 3
-        Button4.Text = "Nurse"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' Button5
-        ' 
-        Button5.FlatAppearance.BorderSize = 0
-        Button5.FlatStyle = FlatStyle.Flat
-        Button5.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = SystemColors.ButtonFace
-        Button5.Location = New Point(4, 401)
-        Button5.Margin = New Padding(4, 3, 4, 3)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(290, 50)
-        Button5.TabIndex = 4
-        Button5.Text = "Report"
-        Button5.UseVisualStyleBackColor = True
-        ' 
-        ' Button6
-        ' 
-        Button6.FlatAppearance.BorderSize = 0
-        Button6.FlatStyle = FlatStyle.Flat
-        Button6.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button6.ForeColor = SystemColors.ButtonFace
-        Button6.Location = New Point(4, 458)
-        Button6.Margin = New Padding(4, 3, 4, 3)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(290, 50)
-        Button6.TabIndex = 5
-        Button6.Text = "Profile"
-        Button6.UseVisualStyleBackColor = True
-        ' 
-        ' Button7
-        ' 
-        Button7.FlatAppearance.BorderSize = 0
-        Button7.FlatStyle = FlatStyle.Flat
-        Button7.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button7.ForeColor = SystemColors.ButtonFace
-        Button7.Location = New Point(4, 515)
-        Button7.Margin = New Padding(4, 3, 4, 3)
-        Button7.Name = "Button7"
-        Button7.Size = New Size(290, 50)
-        Button7.TabIndex = 6
-        Button7.Text = "Account"
-        Button7.UseVisualStyleBackColor = True
+        btnlogout.FlatAppearance.BorderSize = 0
+        btnlogout.FlatStyle = FlatStyle.Flat
+        btnlogout.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnlogout.ForeColor = SystemColors.ButtonFace
+        btnlogout.Location = New Point(4, 646)
+        btnlogout.Margin = New Padding(4, 3, 4, 3)
+        btnlogout.Name = "btnlogout"
+        btnlogout.Size = New Size(290, 50)
+        btnlogout.TabIndex = 8
+        btnlogout.Text = "Account"
+        btnlogout.UseVisualStyleBackColor = True
         ' 
         ' Button8
         ' 
@@ -181,6 +99,105 @@ Partial Class Admin_DB
         Button8.TabIndex = 7
         Button8.Text = "Log out"
         Button8.UseVisualStyleBackColor = True
+        ' 
+        ' btnaccount
+        ' 
+        btnaccount.FlatAppearance.BorderSize = 0
+        btnaccount.FlatStyle = FlatStyle.Flat
+        btnaccount.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnaccount.ForeColor = SystemColors.ButtonFace
+        btnaccount.Location = New Point(4, 515)
+        btnaccount.Margin = New Padding(4, 3, 4, 3)
+        btnaccount.Name = "btnaccount"
+        btnaccount.Size = New Size(290, 50)
+        btnaccount.TabIndex = 6
+        btnaccount.Text = "Account"
+        btnaccount.UseVisualStyleBackColor = True
+        ' 
+        ' btnprofile
+        ' 
+        btnprofile.FlatAppearance.BorderSize = 0
+        btnprofile.FlatStyle = FlatStyle.Flat
+        btnprofile.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnprofile.ForeColor = SystemColors.ButtonFace
+        btnprofile.Location = New Point(4, 458)
+        btnprofile.Margin = New Padding(4, 3, 4, 3)
+        btnprofile.Name = "btnprofile"
+        btnprofile.Size = New Size(290, 50)
+        btnprofile.TabIndex = 5
+        btnprofile.Text = "Profile"
+        btnprofile.UseVisualStyleBackColor = True
+        ' 
+        ' btnreport
+        ' 
+        btnreport.FlatAppearance.BorderSize = 0
+        btnreport.FlatStyle = FlatStyle.Flat
+        btnreport.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnreport.ForeColor = SystemColors.ButtonFace
+        btnreport.Location = New Point(4, 401)
+        btnreport.Margin = New Padding(4, 3, 4, 3)
+        btnreport.Name = "btnreport"
+        btnreport.Size = New Size(290, 50)
+        btnreport.TabIndex = 4
+        btnreport.Text = "Report"
+        btnreport.UseVisualStyleBackColor = True
+        ' 
+        ' btnnurse
+        ' 
+        btnnurse.FlatAppearance.BorderSize = 0
+        btnnurse.FlatStyle = FlatStyle.Flat
+        btnnurse.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnnurse.ForeColor = SystemColors.ButtonFace
+        btnnurse.Location = New Point(4, 344)
+        btnnurse.Margin = New Padding(4, 3, 4, 3)
+        btnnurse.Name = "btnnurse"
+        btnnurse.Size = New Size(290, 50)
+        btnnurse.TabIndex = 3
+        btnnurse.Text = "Nurse"
+        btnnurse.UseVisualStyleBackColor = True
+        ' 
+        ' btnschedule
+        ' 
+        btnschedule.FlatAppearance.BorderSize = 0
+        btnschedule.FlatStyle = FlatStyle.Flat
+        btnschedule.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnschedule.ForeColor = SystemColors.ButtonFace
+        btnschedule.Location = New Point(4, 287)
+        btnschedule.Margin = New Padding(4, 3, 4, 3)
+        btnschedule.Name = "btnschedule"
+        btnschedule.Size = New Size(290, 50)
+        btnschedule.TabIndex = 2
+        btnschedule.Text = "Schedule"
+        btnschedule.UseVisualStyleBackColor = True
+        ' 
+        ' btncreateShift
+        ' 
+        btncreateShift.FlatAppearance.BorderSize = 0
+        btncreateShift.FlatStyle = FlatStyle.Flat
+        btncreateShift.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btncreateShift.ForeColor = SystemColors.ButtonFace
+        btncreateShift.Location = New Point(4, 230)
+        btncreateShift.Margin = New Padding(4, 3, 4, 3)
+        btncreateShift.Name = "btncreateShift"
+        btncreateShift.Size = New Size(290, 50)
+        btncreateShift.TabIndex = 1
+        btncreateShift.Text = "Create Shift"
+        btncreateShift.UseVisualStyleBackColor = True
+        ' 
+        ' btndashboard
+        ' 
+        btndashboard.BackColor = Color.MidnightBlue
+        btndashboard.FlatAppearance.BorderSize = 0
+        btndashboard.FlatStyle = FlatStyle.Flat
+        btndashboard.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btndashboard.ForeColor = SystemColors.ButtonFace
+        btndashboard.Location = New Point(4, 173)
+        btndashboard.Margin = New Padding(4, 3, 4, 3)
+        btndashboard.Name = "btndashboard"
+        btndashboard.Size = New Size(290, 50)
+        btndashboard.TabIndex = 0
+        btndashboard.Text = "Dashboard"
+        btndashboard.UseVisualStyleBackColor = False
         ' 
         ' Panel2
         ' 
@@ -207,7 +224,7 @@ Partial Class Admin_DB
         ' Panel3
         ' 
         Panel3.BackColor = Color.RoyalBlue
-        Panel3.Controls.Add(Label6)
+        Panel3.Controls.Add(lbltotalNurse)
         Panel3.Controls.Add(Label2)
         Panel3.Location = New Point(305, 39)
         Panel3.Margin = New Padding(4, 3, 4, 3)
@@ -215,38 +232,17 @@ Partial Class Admin_DB
         Panel3.Size = New Size(214, 113)
         Panel3.TabIndex = 2
         ' 
-        ' Panel4
+        ' lbltotalNurse
         ' 
-        Panel4.BackColor = Color.RoyalBlue
-        Panel4.Controls.Add(Label7)
-        Panel4.Controls.Add(Label3)
-        Panel4.Location = New Point(542, 39)
-        Panel4.Margin = New Padding(4, 3, 4, 3)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(214, 113)
-        Panel4.TabIndex = 3
-        ' 
-        ' Panel6
-        ' 
-        Panel6.BackColor = Color.RoyalBlue
-        Panel6.Controls.Add(Label8)
-        Panel6.Controls.Add(Label4)
-        Panel6.Location = New Point(783, 39)
-        Panel6.Margin = New Padding(4, 3, 4, 3)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(214, 113)
-        Panel6.TabIndex = 4
-        ' 
-        ' Panel7
-        ' 
-        Panel7.BackColor = Color.RoyalBlue
-        Panel7.Controls.Add(Label9)
-        Panel7.Controls.Add(Label5)
-        Panel7.Location = New Point(1024, 39)
-        Panel7.Margin = New Padding(4, 3, 4, 3)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(214, 113)
-        Panel7.TabIndex = 5
+        lbltotalNurse.AutoSize = True
+        lbltotalNurse.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbltotalNurse.ForeColor = SystemColors.ButtonHighlight
+        lbltotalNurse.Location = New Point(84, 13)
+        lbltotalNurse.Margin = New Padding(4, 0, 4, 0)
+        lbltotalNurse.Name = "lbltotalNurse"
+        lbltotalNurse.Size = New Size(40, 44)
+        lbltotalNurse.TabIndex = 7
+        lbltotalNurse.Text = "0"
         ' 
         ' Label2
         ' 
@@ -260,6 +256,29 @@ Partial Class Admin_DB
         Label2.TabIndex = 6
         Label2.Text = "Total Nurse"
         ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.RoyalBlue
+        Panel4.Controls.Add(lbltotalDuty)
+        Panel4.Controls.Add(Label3)
+        Panel4.Location = New Point(542, 39)
+        Panel4.Margin = New Padding(4, 3, 4, 3)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(214, 113)
+        Panel4.TabIndex = 3
+        ' 
+        ' lbltotalDuty
+        ' 
+        lbltotalDuty.AutoSize = True
+        lbltotalDuty.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbltotalDuty.ForeColor = SystemColors.ButtonHighlight
+        lbltotalDuty.Location = New Point(88, 13)
+        lbltotalDuty.Margin = New Padding(4, 0, 4, 0)
+        lbltotalDuty.Name = "lbltotalDuty"
+        lbltotalDuty.Size = New Size(40, 44)
+        lbltotalDuty.TabIndex = 8
+        lbltotalDuty.Text = "0"
+        ' 
         ' Label3
         ' 
         Label3.AutoSize = True
@@ -272,53 +291,16 @@ Partial Class Admin_DB
         Label3.TabIndex = 7
         Label3.Text = "Total Nurse on duty"
         ' 
-        ' Label4
+        ' Panel6
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = SystemColors.ButtonHighlight
-        Label4.Location = New Point(16, 68)
-        Label4.Margin = New Padding(4, 0, 4, 0)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(177, 22)
-        Label4.TabIndex = 8
-        Label4.Text = "Total Active Nurse"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = SystemColors.ButtonHighlight
-        Label5.Location = New Point(51, 68)
-        Label5.Margin = New Padding(4, 0, 4, 0)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(108, 22)
-        Label5.TabIndex = 9
-        Label5.Text = "Total open"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = SystemColors.ButtonHighlight
-        Label6.Location = New Point(84, 13)
-        Label6.Margin = New Padding(4, 0, 4, 0)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(40, 44)
-        Label6.TabIndex = 7
-        Label6.Text = "0"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.ForeColor = SystemColors.ButtonHighlight
-        Label7.Location = New Point(88, 13)
-        Label7.Margin = New Padding(4, 0, 4, 0)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(40, 44)
-        Label7.TabIndex = 8
-        Label7.Text = "0"
+        Panel6.BackColor = Color.RoyalBlue
+        Panel6.Controls.Add(Label8)
+        Panel6.Controls.Add(lbltotalActive)
+        Panel6.Location = New Point(783, 39)
+        Panel6.Margin = New Padding(4, 3, 4, 3)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(214, 113)
+        Panel6.TabIndex = 4
         ' 
         ' Label8
         ' 
@@ -332,6 +314,29 @@ Partial Class Admin_DB
         Label8.TabIndex = 9
         Label8.Text = "0"
         ' 
+        ' lbltotalActive
+        ' 
+        lbltotalActive.AutoSize = True
+        lbltotalActive.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbltotalActive.ForeColor = SystemColors.ButtonHighlight
+        lbltotalActive.Location = New Point(16, 68)
+        lbltotalActive.Margin = New Padding(4, 0, 4, 0)
+        lbltotalActive.Name = "lbltotalActive"
+        lbltotalActive.Size = New Size(177, 22)
+        lbltotalActive.TabIndex = 8
+        lbltotalActive.Text = "Total Active Nurse"
+        ' 
+        ' Panel7
+        ' 
+        Panel7.BackColor = Color.RoyalBlue
+        Panel7.Controls.Add(Label9)
+        Panel7.Controls.Add(lbltotalOpen)
+        Panel7.Location = New Point(1024, 39)
+        Panel7.Margin = New Padding(4, 3, 4, 3)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(214, 113)
+        Panel7.TabIndex = 5
+        ' 
         ' Label9
         ' 
         Label9.AutoSize = True
@@ -343,6 +348,18 @@ Partial Class Admin_DB
         Label9.Size = New Size(40, 44)
         Label9.TabIndex = 10
         Label9.Text = "0"
+        ' 
+        ' lbltotalOpen
+        ' 
+        lbltotalOpen.AutoSize = True
+        lbltotalOpen.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbltotalOpen.ForeColor = SystemColors.ButtonHighlight
+        lbltotalOpen.Location = New Point(51, 68)
+        lbltotalOpen.Margin = New Padding(4, 0, 4, 0)
+        lbltotalOpen.Name = "lbltotalOpen"
+        lbltotalOpen.Size = New Size(108, 22)
+        lbltotalOpen.TabIndex = 9
+        lbltotalOpen.Text = "Total open"
         ' 
         ' Admin_DB
         ' 
@@ -376,14 +393,14 @@ Partial Class Admin_DB
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btndashboard As Button
     Friend WithEvents Button8 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnaccount As Button
+    Friend WithEvents btnprofile As Button
+    Friend WithEvents btnreport As Button
+    Friend WithEvents btnnurse As Button
+    Friend WithEvents btnschedule As Button
+    Friend WithEvents btncreateShift As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel3 As Panel
@@ -391,12 +408,13 @@ Partial Class Admin_DB
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lbltotalActive As Label
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lbltotalOpen As Label
+    Friend WithEvents lbltotalNurse As Label
+    Friend WithEvents lbltotalDuty As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
+    Friend WithEvents btnlogout As Button
 
 End Class
