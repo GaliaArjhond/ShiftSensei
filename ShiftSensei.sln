@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ShiftSensei", "ShiftSensei.vbproj", "{7C181FBF-77BA-4229-9BD5-C69124546ECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C181FBF-77BA-4229-9BD5-C69124546ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C181FBF-77BA-4229-9BD5-C69124546ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C181FBF-77BA-4229-9BD5-C69124546ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C181FBF-77BA-4229-9BD5-C69124546ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92D34DF6-0778-4BA6-9B24-FC4F52C80428}
+	EndGlobalSection
+EndGlobal
