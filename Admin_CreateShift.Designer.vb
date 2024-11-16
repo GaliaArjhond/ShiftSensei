@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Admin_DB
+Partial Class Admin_CreateShift
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -34,24 +34,26 @@ Partial Class Admin_DB
         btndashboard = New Button()
         Panel2 = New Panel()
         Label1 = New Label()
-        Panel3 = New Panel()
-        lbltotalNurse = New Label()
         Label2 = New Label()
-        Panel4 = New Panel()
-        lbltotalDuty = New Label()
         Label3 = New Label()
-        Panel6 = New Panel()
+        DateTimePicker1 = New DateTimePicker()
+        DateTimePicker2 = New DateTimePicker()
+        RichTextBox1 = New RichTextBox()
+        Button1 = New Button()
+        ComboBox1 = New ComboBox()
+        ComboBox2 = New ComboBox()
+        Label4 = New Label()
+        Label5 = New Label()
+        Label6 = New Label()
+        DateTimePicker3 = New DateTimePicker()
+        Label7 = New Label()
         Label8 = New Label()
-        lbltotalActive = New Label()
-        Panel7 = New Panel()
+        ComboBox3 = New ComboBox()
+        ComboBox4 = New ComboBox()
         Label9 = New Label()
-        lbltotalOpen = New Label()
+        Button2 = New Button()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
-        Panel3.SuspendLayout()
-        Panel4.SuspendLayout()
-        Panel6.SuspendLayout()
-        Panel7.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
@@ -76,7 +78,7 @@ Partial Class Admin_DB
         ' 
         btnlogout.FlatAppearance.BorderSize = 0
         btnlogout.FlatStyle = FlatStyle.Flat
-        btnlogout.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnlogout.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnlogout.ForeColor = SystemColors.ButtonFace
         btnlogout.Location = New Point(4, 646)
         btnlogout.Margin = New Padding(4, 3, 4, 3)
@@ -90,7 +92,7 @@ Partial Class Admin_DB
         ' 
         Button8.FlatAppearance.BorderSize = 0
         Button8.FlatStyle = FlatStyle.Flat
-        Button8.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button8.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button8.ForeColor = SystemColors.ButtonFace
         Button8.Location = New Point(4, 685)
         Button8.Margin = New Padding(4, 3, 4, 3)
@@ -104,7 +106,7 @@ Partial Class Admin_DB
         ' 
         btnaccount.FlatAppearance.BorderSize = 0
         btnaccount.FlatStyle = FlatStyle.Flat
-        btnaccount.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnaccount.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnaccount.ForeColor = SystemColors.ButtonFace
         btnaccount.Location = New Point(4, 515)
         btnaccount.Margin = New Padding(4, 3, 4, 3)
@@ -118,7 +120,7 @@ Partial Class Admin_DB
         ' 
         btnprofile.FlatAppearance.BorderSize = 0
         btnprofile.FlatStyle = FlatStyle.Flat
-        btnprofile.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnprofile.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnprofile.ForeColor = SystemColors.ButtonFace
         btnprofile.Location = New Point(4, 458)
         btnprofile.Margin = New Padding(4, 3, 4, 3)
@@ -132,7 +134,7 @@ Partial Class Admin_DB
         ' 
         btnreport.FlatAppearance.BorderSize = 0
         btnreport.FlatStyle = FlatStyle.Flat
-        btnreport.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnreport.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnreport.ForeColor = SystemColors.ButtonFace
         btnreport.Location = New Point(4, 401)
         btnreport.Margin = New Padding(4, 3, 4, 3)
@@ -146,7 +148,7 @@ Partial Class Admin_DB
         ' 
         btnnurse.FlatAppearance.BorderSize = 0
         btnnurse.FlatStyle = FlatStyle.Flat
-        btnnurse.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnnurse.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnnurse.ForeColor = SystemColors.ButtonFace
         btnnurse.Location = New Point(4, 344)
         btnnurse.Margin = New Padding(4, 3, 4, 3)
@@ -160,7 +162,7 @@ Partial Class Admin_DB
         ' 
         btnschedule.FlatAppearance.BorderSize = 0
         btnschedule.FlatStyle = FlatStyle.Flat
-        btnschedule.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnschedule.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnschedule.ForeColor = SystemColors.ButtonFace
         btnschedule.Location = New Point(4, 287)
         btnschedule.Margin = New Padding(4, 3, 4, 3)
@@ -172,9 +174,10 @@ Partial Class Admin_DB
         ' 
         ' btncreateShift
         ' 
+        btncreateShift.BackColor = Color.MidnightBlue
         btncreateShift.FlatAppearance.BorderSize = 0
         btncreateShift.FlatStyle = FlatStyle.Flat
-        btncreateShift.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btncreateShift.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btncreateShift.ForeColor = SystemColors.ButtonFace
         btncreateShift.Location = New Point(4, 230)
         btncreateShift.Margin = New Padding(4, 3, 4, 3)
@@ -182,14 +185,14 @@ Partial Class Admin_DB
         btncreateShift.Size = New Size(290, 50)
         btncreateShift.TabIndex = 1
         btncreateShift.Text = "Create Shift"
-        btncreateShift.UseVisualStyleBackColor = True
+        btncreateShift.UseVisualStyleBackColor = False
         ' 
         ' btndashboard
         ' 
-        btndashboard.BackColor = Color.MidnightBlue
+        btndashboard.BackColor = Color.RoyalBlue
         btndashboard.FlatAppearance.BorderSize = 0
         btndashboard.FlatStyle = FlatStyle.Flat
-        btndashboard.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btndashboard.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btndashboard.ForeColor = SystemColors.ButtonFace
         btndashboard.Location = New Point(4, 173)
         btndashboard.Margin = New Padding(4, 3, 4, 3)
@@ -221,176 +224,210 @@ Partial Class Admin_DB
         Label1.TabIndex = 0
         Label1.Text = "Shift Sensei"
         ' 
-        ' Panel3
-        ' 
-        Panel3.BackColor = Color.RoyalBlue
-        Panel3.Controls.Add(lbltotalNurse)
-        Panel3.Controls.Add(Label2)
-        Panel3.Location = New Point(305, 39)
-        Panel3.Margin = New Padding(4, 3, 4, 3)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(214, 113)
-        Panel3.TabIndex = 2
-        ' 
-        ' lbltotalNurse
-        ' 
-        lbltotalNurse.AutoSize = True
-        lbltotalNurse.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbltotalNurse.ForeColor = SystemColors.ButtonHighlight
-        lbltotalNurse.Location = New Point(84, 13)
-        lbltotalNurse.Margin = New Padding(4, 0, 4, 0)
-        lbltotalNurse.Name = "lbltotalNurse"
-        lbltotalNurse.Size = New Size(40, 44)
-        lbltotalNurse.TabIndex = 7
-        lbltotalNurse.Text = "0"
-        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = SystemColors.ButtonHighlight
-        Label2.Location = New Point(45, 68)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label2.Location = New Point(328, 137)
         Label2.Name = "Label2"
-        Label2.Size = New Size(116, 22)
-        Label2.TabIndex = 6
-        Label2.Text = "Total Nurse"
-        ' 
-        ' Panel4
-        ' 
-        Panel4.BackColor = Color.RoyalBlue
-        Panel4.Controls.Add(lbltotalDuty)
-        Panel4.Controls.Add(Label3)
-        Panel4.Location = New Point(542, 39)
-        Panel4.Margin = New Padding(4, 3, 4, 3)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(214, 113)
-        Panel4.TabIndex = 3
-        ' 
-        ' lbltotalDuty
-        ' 
-        lbltotalDuty.AutoSize = True
-        lbltotalDuty.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbltotalDuty.ForeColor = SystemColors.ButtonHighlight
-        lbltotalDuty.Location = New Point(88, 13)
-        lbltotalDuty.Margin = New Padding(4, 0, 4, 0)
-        lbltotalDuty.Name = "lbltotalDuty"
-        lbltotalDuty.Size = New Size(40, 44)
-        lbltotalDuty.TabIndex = 8
-        lbltotalDuty.Text = "0"
+        Label2.Size = New Size(107, 23)
+        Label2.TabIndex = 2
+        Label2.Text = "Nurse Name:"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = SystemColors.ButtonHighlight
-        Label3.Location = New Point(15, 68)
-        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label3.Location = New Point(328, 196)
         Label3.Name = "Label3"
-        Label3.Size = New Size(191, 22)
-        Label3.TabIndex = 7
-        Label3.Text = "Total Nurse on duty"
+        Label3.Size = New Size(139, 23)
+        Label3.TabIndex = 3
+        Label3.Text = "License Number:"
         ' 
-        ' Panel6
+        ' DateTimePicker1
         ' 
-        Panel6.BackColor = Color.RoyalBlue
-        Panel6.Controls.Add(Label8)
-        Panel6.Controls.Add(lbltotalActive)
-        Panel6.Location = New Point(783, 39)
-        Panel6.Margin = New Padding(4, 3, 4, 3)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(214, 113)
-        Panel6.TabIndex = 4
+        DateTimePicker1.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        DateTimePicker1.Location = New Point(920, 134)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(290, 29)
+        DateTimePicker1.TabIndex = 11
+        ' 
+        ' DateTimePicker2
+        ' 
+        DateTimePicker2.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        DateTimePicker2.Location = New Point(920, 195)
+        DateTimePicker2.Name = "DateTimePicker2"
+        DateTimePicker2.Size = New Size(290, 29)
+        DateTimePicker2.TabIndex = 12
+        ' 
+        ' RichTextBox1
+        ' 
+        RichTextBox1.Font = New Font("Arial", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        RichTextBox1.Location = New Point(920, 315)
+        RichTextBox1.Name = "RichTextBox1"
+        RichTextBox1.Size = New Size(290, 207)
+        RichTextBox1.TabIndex = 15
+        RichTextBox1.Text = ""
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(499, 395)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(210, 40)
+        Button1.TabIndex = 16
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(499, 134)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(210, 31)
+        ComboBox1.TabIndex = 17
+        ' 
+        ' ComboBox2
+        ' 
+        ComboBox2.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ComboBox2.FormattingEnabled = True
+        ComboBox2.Location = New Point(499, 193)
+        ComboBox2.Name = "ComboBox2"
+        ComboBox2.Size = New Size(210, 31)
+        ComboBox2.TabIndex = 18
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label4.Location = New Point(773, 137)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(87, 23)
+        Label4.TabIndex = 19
+        Label4.Text = "Shift Date:"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label5.Location = New Point(773, 196)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(124, 23)
+        Label5.TabIndex = 20
+        Label5.Text = "Shift Start time:"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label6.Location = New Point(773, 257)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(119, 23)
+        Label6.TabIndex = 21
+        Label6.Text = "Shift End time:"
+        ' 
+        ' DateTimePicker3
+        ' 
+        DateTimePicker3.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        DateTimePicker3.Location = New Point(920, 252)
+        DateTimePicker3.Name = "DateTimePicker3"
+        DateTimePicker3.Size = New Size(290, 29)
+        DateTimePicker3.TabIndex = 22
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label7.Location = New Point(328, 258)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(103, 23)
+        Label7.TabIndex = 23
+        Label7.Text = "Department:"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.ForeColor = SystemColors.ButtonHighlight
-        Label8.Location = New Point(84, 13)
-        Label8.Margin = New Padding(4, 0, 4, 0)
+        Label8.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label8.Location = New Point(328, 314)
         Label8.Name = "Label8"
-        Label8.Size = New Size(40, 44)
-        Label8.TabIndex = 9
-        Label8.Text = "0"
+        Label8.Size = New Size(77, 23)
+        Label8.TabIndex = 24
+        Label8.Text = "Position:"
         ' 
-        ' lbltotalActive
+        ' ComboBox3
         ' 
-        lbltotalActive.AutoSize = True
-        lbltotalActive.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbltotalActive.ForeColor = SystemColors.ButtonHighlight
-        lbltotalActive.Location = New Point(16, 68)
-        lbltotalActive.Margin = New Padding(4, 0, 4, 0)
-        lbltotalActive.Name = "lbltotalActive"
-        lbltotalActive.Size = New Size(177, 22)
-        lbltotalActive.TabIndex = 8
-        lbltotalActive.Text = "Total Active Nurse"
+        ComboBox3.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ComboBox3.FormattingEnabled = True
+        ComboBox3.Location = New Point(499, 254)
+        ComboBox3.Name = "ComboBox3"
+        ComboBox3.Size = New Size(210, 31)
+        ComboBox3.TabIndex = 25
         ' 
-        ' Panel7
+        ' ComboBox4
         ' 
-        Panel7.BackColor = Color.RoyalBlue
-        Panel7.Controls.Add(Label9)
-        Panel7.Controls.Add(lbltotalOpen)
-        Panel7.Location = New Point(1024, 39)
-        Panel7.Margin = New Padding(4, 3, 4, 3)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(214, 113)
-        Panel7.TabIndex = 5
+        ComboBox4.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ComboBox4.FormattingEnabled = True
+        ComboBox4.Location = New Point(499, 311)
+        ComboBox4.Name = "ComboBox4"
+        ComboBox4.Size = New Size(210, 31)
+        ComboBox4.TabIndex = 26
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = SystemColors.ButtonHighlight
-        Label9.Location = New Point(91, 13)
-        Label9.Margin = New Padding(4, 0, 4, 0)
+        Label9.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label9.Location = New Point(773, 314)
         Label9.Name = "Label9"
-        Label9.Size = New Size(40, 44)
-        Label9.TabIndex = 10
-        Label9.Text = "0"
+        Label9.Size = New Size(88, 23)
+        Label9.TabIndex = 27
+        Label9.Text = "Comment:"
         ' 
-        ' lbltotalOpen
+        ' Button2
         ' 
-        lbltotalOpen.AutoSize = True
-        lbltotalOpen.Font = New Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbltotalOpen.ForeColor = SystemColors.ButtonHighlight
-        lbltotalOpen.Location = New Point(51, 68)
-        lbltotalOpen.Margin = New Padding(4, 0, 4, 0)
-        lbltotalOpen.Name = "lbltotalOpen"
-        lbltotalOpen.Size = New Size(108, 22)
-        lbltotalOpen.TabIndex = 9
-        lbltotalOpen.Text = "Total open"
+        Button2.Location = New Point(499, 455)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(210, 40)
+        Button2.TabIndex = 28
+        Button2.Text = "Button2"
+        Button2.UseVisualStyleBackColor = True
         ' 
-        ' Admin_DB
+        ' Admin_CreateShift
         ' 
-        AutoScaleDimensions = New SizeF(10F, 19F)
+        AutoScaleDimensions = New SizeF(10.0F, 19.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonHighlight
         ClientSize = New Size(1264, 681)
-        Controls.Add(Panel7)
-        Controls.Add(Panel6)
-        Controls.Add(Panel4)
-        Controls.Add(Panel3)
+        Controls.Add(Button2)
+        Controls.Add(Label9)
+        Controls.Add(ComboBox4)
+        Controls.Add(ComboBox3)
+        Controls.Add(Label8)
+        Controls.Add(Label7)
+        Controls.Add(DateTimePicker3)
+        Controls.Add(Label6)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(ComboBox2)
+        Controls.Add(ComboBox1)
+        Controls.Add(Button1)
+        Controls.Add(RichTextBox1)
+        Controls.Add(DateTimePicker2)
+        Controls.Add(DateTimePicker1)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
-        Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Font = New Font("Arial", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         FormBorderStyle = FormBorderStyle.FixedSingle
         Margin = New Padding(5, 4, 5, 4)
-        Name = "Admin_DB"
+        Name = "Admin_CreateShift"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Admin Dashboard"
+        Text = "Admin Create Shift"
         Panel1.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
-        Panel4.ResumeLayout(False)
-        Panel4.PerformLayout()
-        Panel6.ResumeLayout(False)
-        Panel6.PerformLayout()
-        Panel7.ResumeLayout(False)
-        Panel7.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Panel1 As Panel
@@ -404,18 +441,24 @@ Partial Class Admin_DB
     Friend WithEvents btncreateShift As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents lbltotalActive As Label
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents lbltotalOpen As Label
-    Friend WithEvents lbltotalNurse As Label
-    Friend WithEvents lbltotalDuty As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents btnlogout As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents DateTimePicker3 As DateTimePicker
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Button2 As Button
 
 End Class
