@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Admin_Nurse
+Partial Class Admin_Report
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -34,14 +34,8 @@ Partial Class Admin_Nurse
         btndashboard = New Button()
         Panel2 = New Panel()
         Label1 = New Label()
-        DataGridView1 = New DataGridView()
-        TextBox1 = New TextBox()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -66,7 +60,7 @@ Partial Class Admin_Nurse
         ' 
         btnlogout.FlatAppearance.BorderSize = 0
         btnlogout.FlatStyle = FlatStyle.Flat
-        btnlogout.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnlogout.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnlogout.ForeColor = SystemColors.ButtonFace
         btnlogout.Location = New Point(4, 646)
         btnlogout.Margin = New Padding(4, 3, 4, 3)
@@ -80,7 +74,7 @@ Partial Class Admin_Nurse
         ' 
         Button8.FlatAppearance.BorderSize = 0
         Button8.FlatStyle = FlatStyle.Flat
-        Button8.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button8.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button8.ForeColor = SystemColors.ButtonFace
         Button8.Location = New Point(4, 685)
         Button8.Margin = New Padding(4, 3, 4, 3)
@@ -94,7 +88,7 @@ Partial Class Admin_Nurse
         ' 
         btnaccount.FlatAppearance.BorderSize = 0
         btnaccount.FlatStyle = FlatStyle.Flat
-        btnaccount.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnaccount.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnaccount.ForeColor = SystemColors.ButtonFace
         btnaccount.Location = New Point(4, 515)
         btnaccount.Margin = New Padding(4, 3, 4, 3)
@@ -108,7 +102,7 @@ Partial Class Admin_Nurse
         ' 
         btnprofile.FlatAppearance.BorderSize = 0
         btnprofile.FlatStyle = FlatStyle.Flat
-        btnprofile.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnprofile.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnprofile.ForeColor = SystemColors.ButtonFace
         btnprofile.Location = New Point(4, 458)
         btnprofile.Margin = New Padding(4, 3, 4, 3)
@@ -120,9 +114,10 @@ Partial Class Admin_Nurse
         ' 
         ' btnreport
         ' 
+        btnreport.BackColor = Color.MidnightBlue
         btnreport.FlatAppearance.BorderSize = 0
         btnreport.FlatStyle = FlatStyle.Flat
-        btnreport.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnreport.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnreport.ForeColor = SystemColors.ButtonFace
         btnreport.Location = New Point(4, 401)
         btnreport.Margin = New Padding(4, 3, 4, 3)
@@ -130,14 +125,14 @@ Partial Class Admin_Nurse
         btnreport.Size = New Size(290, 50)
         btnreport.TabIndex = 4
         btnreport.Text = "Report"
-        btnreport.UseVisualStyleBackColor = True
+        btnreport.UseVisualStyleBackColor = False
         ' 
         ' btnnurse
         ' 
-        btnnurse.BackColor = Color.MidnightBlue
+        btnnurse.BackColor = Color.RoyalBlue
         btnnurse.FlatAppearance.BorderSize = 0
         btnnurse.FlatStyle = FlatStyle.Flat
-        btnnurse.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnnurse.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnnurse.ForeColor = SystemColors.ButtonFace
         btnnurse.Location = New Point(4, 344)
         btnnurse.Margin = New Padding(4, 3, 4, 3)
@@ -151,7 +146,7 @@ Partial Class Admin_Nurse
         ' 
         btnschedule.FlatAppearance.BorderSize = 0
         btnschedule.FlatStyle = FlatStyle.Flat
-        btnschedule.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnschedule.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnschedule.ForeColor = SystemColors.ButtonFace
         btnschedule.Location = New Point(4, 287)
         btnschedule.Margin = New Padding(4, 3, 4, 3)
@@ -165,7 +160,7 @@ Partial Class Admin_Nurse
         ' 
         btncreateShift.FlatAppearance.BorderSize = 0
         btncreateShift.FlatStyle = FlatStyle.Flat
-        btncreateShift.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btncreateShift.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btncreateShift.ForeColor = SystemColors.ButtonFace
         btncreateShift.Location = New Point(4, 230)
         btncreateShift.Margin = New Padding(4, 3, 4, 3)
@@ -180,7 +175,7 @@ Partial Class Admin_Nurse
         btndashboard.BackColor = Color.RoyalBlue
         btndashboard.FlatAppearance.BorderSize = 0
         btndashboard.FlatStyle = FlatStyle.Flat
-        btndashboard.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btndashboard.Font = New Font("Arial Rounded MT Bold", 15.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btndashboard.ForeColor = SystemColors.ButtonFace
         btndashboard.Location = New Point(4, 173)
         btndashboard.Margin = New Padding(4, 3, 4, 3)
@@ -212,86 +207,24 @@ Partial Class Admin_Nurse
         Label1.TabIndex = 0
         Label1.Text = "Shift Sensei"
         ' 
-        ' DataGridView1
+        ' Admin_Report
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(328, 174)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(882, 450)
-        DataGridView1.TabIndex = 2
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Font = New Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(328, 120)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(268, 29)
-        TextBox1.TabIndex = 3
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.OrangeRed
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(618, 120)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(108, 29)
-        Button1.TabIndex = 4
-        Button1.Text = "Search"
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.OrangeRed
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.ForeColor = SystemColors.ControlLightLight
-        Button2.Location = New Point(1102, 121)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(108, 29)
-        Button2.TabIndex = 5
-        Button2.Text = "Filter"
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Button3
-        ' 
-        Button3.BackColor = Color.OrangeRed
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.ForeColor = SystemColors.ControlLightLight
-        Button3.Location = New Point(939, 121)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(140, 29)
-        Button3.TabIndex = 6
-        Button3.Text = "Add/Remove"
-        Button3.UseVisualStyleBackColor = False
-        ' 
-        ' Admin_Nurse
-        ' 
-        AutoScaleDimensions = New SizeF(10F, 19F)
+        AutoScaleDimensions = New SizeF(10.0F, 19.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonHighlight
         ClientSize = New Size(1264, 681)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(TextBox1)
-        Controls.Add(DataGridView1)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
-        Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Font = New Font("Arial", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         FormBorderStyle = FormBorderStyle.FixedSingle
         Margin = New Padding(5, 4, 5, 4)
-        Name = "Admin_Nurse"
+        Name = "Admin_Report"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Admin Dashboard"
         Panel1.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents Panel1 As Panel
@@ -306,10 +239,5 @@ Partial Class Admin_Nurse
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents btnlogout As Button
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
 
 End Class

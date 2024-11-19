@@ -253,30 +253,45 @@ Partial Class createAccount
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.OrangeRed
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Arial", 12F, FontStyle.Bold)
+        Button1.ForeColor = SystemColors.ControlLight
         Button1.Location = New Point(908, 613)
         Button1.Name = "Button1"
         Button1.Size = New Size(159, 35)
         Button1.TabIndex = 23
         Button1.Text = "Create Account"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
+        Button2.BackColor = Color.OrangeRed
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Arial", 12F, FontStyle.Bold)
+        Button2.ForeColor = SystemColors.ControlLight
         Button2.Location = New Point(30, 613)
         Button2.Name = "Button2"
         Button2.Size = New Size(159, 35)
         Button2.TabIndex = 24
         Button2.Text = "Back"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
+        Button3.BackColor = Color.OrangeRed
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Arial", 12F, FontStyle.Bold)
+        Button3.ForeColor = SystemColors.ControlLight
         Button3.Location = New Point(720, 613)
         Button3.Name = "Button3"
         Button3.Size = New Size(159, 35)
         Button3.TabIndex = 25
         Button3.Text = "Clear"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' GroupBox1
         ' 
@@ -358,7 +373,7 @@ Partial Class createAccount
         Controls.Add(GroupBox2)
         Controls.Add(Profile)
         Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "createAccount"
         StartPosition = FormStartPosition.CenterScreen
         Text = "createAccount"

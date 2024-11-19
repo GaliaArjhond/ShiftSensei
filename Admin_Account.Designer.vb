@@ -45,9 +45,9 @@ Partial Class Admin_Account
         Button3 = New Button()
         GroupBox1 = New GroupBox()
         GroupBox2 = New GroupBox()
-        Label9 = New Label()
-        Label10 = New Label()
         Label11 = New Label()
+        Label10 = New Label()
+        Label9 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         GroupBox1.SuspendLayout()
@@ -285,7 +285,7 @@ Partial Class Admin_Account
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(928, 415)
+        Button1.Location = New Point(999, 415)
         Button1.Name = "Button1"
         Button1.Size = New Size(212, 41)
         Button1.TabIndex = 9
@@ -294,7 +294,7 @@ Partial Class Admin_Account
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(928, 492)
+        Button2.Location = New Point(999, 492)
         Button2.Name = "Button2"
         Button2.Size = New Size(212, 41)
         Button2.TabIndex = 10
@@ -303,7 +303,7 @@ Partial Class Admin_Account
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(928, 569)
+        Button3.Location = New Point(999, 569)
         Button3.Name = "Button3"
         Button3.Size = New Size(212, 41)
         Button3.TabIndex = 11
@@ -337,15 +337,15 @@ Partial Class Admin_Account
         GroupBox2.TabStop = False
         GroupBox2.Text = "Availabilty"
         ' 
-        ' Label9
+        ' Label11
         ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
-        Label9.Location = New Point(25, 77)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(106, 23)
-        Label9.TabIndex = 13
-        Label9.Text = "Day of week:"
+        Label11.AutoSize = True
+        Label11.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label11.Location = New Point(25, 248)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(108, 23)
+        Label11.TabIndex = 15
+        Label11.Text = "Available To:"
         ' 
         ' Label10
         ' 
@@ -357,15 +357,15 @@ Partial Class Admin_Account
         Label10.TabIndex = 14
         Label10.Text = "Available From:"
         ' 
-        ' Label11
+        ' Label9
         ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
-        Label11.Location = New Point(25, 248)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(108, 23)
-        Label11.TabIndex = 15
-        Label11.Text = "Available To:"
+        Label9.AutoSize = True
+        Label9.Font = New Font("Arial Narrow", 14.25F, FontStyle.Bold)
+        Label9.Location = New Point(25, 77)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(106, 23)
+        Label9.TabIndex = 13
+        Label9.Text = "Day of week:"
         ' 
         ' Admin_Account
         ' 
