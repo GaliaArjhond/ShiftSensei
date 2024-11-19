@@ -15,19 +15,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Admin_Account.vb">
+    <Compile Update="Admin From\Admin_Account.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Admin_CreateShift.vb">
+    <Compile Update="Admin From\Admin_CreateShift.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Admin_Report.vb">
+    <Compile Update="Admin From\Admin_Report.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Admin_Nurse.vb">
+    <Compile Update="Admin From\Admin_Nurse.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Admin_Schedule.vb">
+    <Compile Update="Admin From\Admin_Schedule.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="My Project\Application.Designer.vb">
@@ -52,6 +52,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Nuse From\" />
   </ItemGroup>
 
 </Project>
