@@ -24,7 +24,6 @@ Partial Class Admin_DB
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         btnlogout = New Button()
-        Button8 = New Button()
         btnaccount = New Button()
         btnprofile = New Button()
         btnreport = New Button()
@@ -58,7 +57,6 @@ Partial Class Admin_DB
         ' 
         Panel1.BackColor = Color.RoyalBlue
         Panel1.Controls.Add(btnlogout)
-        Panel1.Controls.Add(Button8)
         Panel1.Controls.Add(btnaccount)
         Panel1.Controls.Add(btnprofile)
         Panel1.Controls.Add(btnreport)
@@ -85,20 +83,6 @@ Partial Class Admin_DB
         btnlogout.TabIndex = 8
         btnlogout.Text = "Log out"
         btnlogout.UseVisualStyleBackColor = True
-        ' 
-        ' Button8
-        ' 
-        Button8.FlatAppearance.BorderSize = 0
-        Button8.FlatStyle = FlatStyle.Flat
-        Button8.Font = New Font("Arial Rounded MT Bold", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button8.ForeColor = SystemColors.ButtonFace
-        Button8.Location = New Point(4, 685)
-        Button8.Margin = New Padding(4, 3, 4, 3)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(290, 50)
-        Button8.TabIndex = 7
-        Button8.Text = "Log out"
-        Button8.UseVisualStyleBackColor = True
         ' 
         ' btnaccount
         ' 
@@ -395,7 +379,6 @@ Partial Class Admin_DB
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btndashboard As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents btnaccount As Button
     Friend WithEvents btnprofile As Button
     Friend WithEvents btnreport As Button
