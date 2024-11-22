@@ -73,6 +73,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm\Admin_Account.Designer.vb">
+      <DependentUpon>Admin_Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Profile.Designer.vb">
+      <DependentUpon>Admin_Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Nurse.Designer.vb">
+      <DependentUpon>Admin_Nurse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Nurse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Schedule.Designer.vb">
+      <DependentUpon>Admin_Schedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Schedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\Admin_CreateShift.Designer.vb">
+      <DependentUpon>Admin_CreateShift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Admin_CreateShift.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AdminForm\Admin_Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +127,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdminForm\Admin_Account.resx">
+      <DependentUpon>Admin_Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Admin_Profile.resx">
+      <DependentUpon>Admin_Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Admin_Nurse.resx">
+      <DependentUpon>Admin_Nurse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Admin_Schedule.resx">
+      <DependentUpon>Admin_Schedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Admin_CreateShift.resx">
+      <DependentUpon>Admin_CreateShift.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminForm\Admin_Dashboard.resx">
       <DependentUpon>Admin_Dashboard.vb</DependentUpon>
     </EmbeddedResource>
