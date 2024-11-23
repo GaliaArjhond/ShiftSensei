@@ -1,5 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Admin_Schedule
+Partial Class Admin_Account1
+
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -173,7 +174,7 @@ Partial Class Admin_Schedule
         Me.Button2.Text = "Create Shift"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Admin_Schedule
+        'Admin_Account1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -182,7 +183,7 @@ Partial Class Admin_Schedule
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "Admin_Schedule"
+        Me.Name = "Admin_Account1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin Dashboard"
         Me.Panel2.ResumeLayout(False)

@@ -80,28 +80,16 @@
     <Compile Include="AdminForm\Admin_Allocate.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm\Admin_Dashboard - Copy.Designer.vb">
+    <Compile Include="AdminForm\Admin_Account1.Designer.vb">
       <DependentUpon>Admin_Account1.vb</DependentUpon>
     </Compile>
     <Compile Include="AdminForm\Admin_Account1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm\Admin_ViewShift.Designer.vb">
-      <DependentUpon>Admin_ViewShift.vb</DependentUpon>
+    <Compile Include="AdminForm\Admin_CreateShift.Designer.vb">
+      <DependentUpon>Admin_CreateShift.vb</DependentUpon>
     </Compile>
-    <Compile Include="AdminForm\Admin_ViewShift.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminForm\Admin_Profile.Designer.vb">
-      <DependentUpon>Admin_Profile.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdminForm\Admin_Profile.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminForm\Admin_Nurse.Designer.vb">
-      <DependentUpon>Admin_Nurse.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdminForm\Admin_Nurse.vb">
+    <Compile Include="AdminForm\Admin_CreateShift.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminForm\Admin_Schedule.Designer.vb">
@@ -110,10 +98,10 @@
     <Compile Include="AdminForm\Admin_Schedule.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm\Admin_CreateShift.Designer.vb">
-      <DependentUpon>Admin_CreateShift.vb</DependentUpon>
+    <Compile Include="AdminForm\Admin_EditShift.Designer.vb">
+      <DependentUpon>Admin_EditShift.vb</DependentUpon>
     </Compile>
-    <Compile Include="AdminForm\Admin_CreateShift.vb">
+    <Compile Include="AdminForm\Admin_EditShift.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminForm\Admin_Dashboard.vb">
@@ -144,23 +132,17 @@
     <EmbeddedResource Include="AdminForm\Admin_Allocate.resx">
       <DependentUpon>Admin_Allocate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm\Admin_Dashboard - Copy.resx">
+    <EmbeddedResource Include="AdminForm\Admin_Account1.resx">
       <DependentUpon>Admin_Account1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm\Admin_ViewShift.resx">
-      <DependentUpon>Admin_ViewShift.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm\Admin_Profile.resx">
-      <DependentUpon>Admin_Profile.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm\Admin_Nurse.resx">
-      <DependentUpon>Admin_Nurse.vb</DependentUpon>
+    <EmbeddedResource Include="AdminForm\Admin_CreateShift.resx">
+      <DependentUpon>Admin_CreateShift.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm\Admin_Schedule.resx">
       <DependentUpon>Admin_Schedule.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm\Admin_CreateShift.resx">
-      <DependentUpon>Admin_CreateShift.vb</DependentUpon>
+    <EmbeddedResource Include="AdminForm\Admin_EditShift.resx">
+      <DependentUpon>Admin_EditShift.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm\Admin_Dashboard.resx">
       <DependentUpon>Admin_Dashboard.vb</DependentUpon>
