@@ -49,17 +49,14 @@ Partial Class Admin_CreateShift
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -349,20 +346,13 @@ Partial Class Admin_CreateShift
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Shift Name:"
         '
-        'GroupBox2
+        'DataGridView1
         '
-        Me.GroupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.DataGridView1)
-        Me.GroupBox2.Controls.Add(Me.Button11)
-        Me.GroupBox2.Controls.Add(Me.Button9)
-        Me.GroupBox2.Controls.Add(Me.Button10)
-        Me.GroupBox2.Location = New System.Drawing.Point(252, 427)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(945, 242)
-        Me.GroupBox2.TabIndex = 2
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Previously created shifts "
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(24, 47)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(872, 175)
+        Me.DataGridView1.TabIndex = 20
         '
         'Label9
         '
@@ -372,52 +362,17 @@ Partial Class Admin_CreateShift
         Me.Label9.Size = New System.Drawing.Size(0, 19)
         Me.Label9.TabIndex = 24
         '
-        'DataGridView1
+        'GroupBox2
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 47)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(622, 175)
-        Me.DataGridView1.TabIndex = 20
-        '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button11.Location = New System.Drawing.Point(693, 47)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(203, 48)
-        Me.Button11.TabIndex = 23
-        Me.Button11.Text = "Edit"
-        Me.Button11.UseVisualStyleBackColor = False
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button9.Location = New System.Drawing.Point(693, 170)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(203, 48)
-        Me.Button9.TabIndex = 21
-        Me.Button9.Text = "Allocate Nurses"
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button10.Location = New System.Drawing.Point(693, 106)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(203, 48)
-        Me.Button10.TabIndex = 22
-        Me.Button10.Text = "Delete"
-        Me.Button10.UseVisualStyleBackColor = False
+        Me.GroupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.DataGridView1)
+        Me.GroupBox2.Location = New System.Drawing.Point(252, 427)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(945, 242)
+        Me.GroupBox2.TabIndex = 2
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Previously created shifts "
         '
         'Admin_CreateShift
         '
@@ -438,9 +393,9 @@ Partial Class Admin_CreateShift
         Me.Panel2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -472,10 +427,7 @@ Partial Class Admin_CreateShift
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Label9 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
+    Friend WithEvents Label9 As Label
+    Friend WithEvents GroupBox2 As GroupBox
 End Class
