@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Nurse_Dashboard
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Admin_Dashboard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,14 @@ Partial Class Nurse_Dashboard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -44,15 +44,15 @@ Partial Class Nurse_Dashboard
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnDashboard = New System.Windows.Forms.Button()
+        Me.btnSchedule = New System.Windows.Forms.Button()
+        Me.btnNurse = New System.Windows.Forms.Button()
+        Me.btnProfile = New System.Windows.Forms.Button()
+        Me.btnAccount = New System.Windows.Forms.Button()
+        Me.btnLogOut = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.btnReport = New System.Windows.Forms.Button()
+        Me.btnCreate = New System.Windows.Forms.Button()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
@@ -65,33 +65,33 @@ Partial Class Nurse_Dashboard
         '
         'Chart2
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend1)
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend3)
         Me.Chart2.Location = New System.Drawing.Point(284, 259)
         Me.Chart2.Name = "Chart2"
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart2.Series.Add(Series1)
+        Series3.ChartArea = "ChartArea1"
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        Me.Chart2.Series.Add(Series3)
         Me.Chart2.Size = New System.Drawing.Size(395, 300)
         Me.Chart2.TabIndex = 10
         Me.Chart2.Text = "Chart2"
         '
         'Chart1
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend2)
+        ChartArea4.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea4)
+        Legend4.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend4)
         Me.Chart1.Location = New System.Drawing.Point(767, 259)
         Me.Chart1.Name = "Chart1"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Me.Chart1.Series.Add(Series2)
+        Series4.ChartArea = "ChartArea1"
+        Series4.Legend = "Legend1"
+        Series4.Name = "Series1"
+        Me.Chart1.Series.Add(Series4)
         Me.Chart1.Size = New System.Drawing.Size(395, 300)
         Me.Chart1.TabIndex = 9
         Me.Chart1.Text = "Chart1"
@@ -245,90 +245,90 @@ Partial Class Nurse_Dashboard
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Shift Sensei"
         '
-        'Button1
+        'btnDashboard
         '
-        Me.Button1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button1.Location = New System.Drawing.Point(4, 135)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(214, 69)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Dashboard"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnDashboard.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
+        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnDashboard.Location = New System.Drawing.Point(4, 135)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Size = New System.Drawing.Size(214, 69)
+        Me.btnDashboard.TabIndex = 1
+        Me.btnDashboard.Text = "Dashboard"
+        Me.btnDashboard.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnSchedule
         '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button3.Location = New System.Drawing.Point(3, 271)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(215, 69)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Schedule"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSchedule.FlatAppearance.BorderSize = 0
+        Me.btnSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSchedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSchedule.Location = New System.Drawing.Point(3, 271)
+        Me.btnSchedule.Name = "btnSchedule"
+        Me.btnSchedule.Size = New System.Drawing.Size(215, 69)
+        Me.btnSchedule.TabIndex = 3
+        Me.btnSchedule.Text = "Schedule"
+        Me.btnSchedule.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnNurse
         '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button4.Location = New System.Drawing.Point(3, 339)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(214, 69)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Nurse"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnNurse.FlatAppearance.BorderSize = 0
+        Me.btnNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNurse.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnNurse.Location = New System.Drawing.Point(3, 339)
+        Me.btnNurse.Name = "btnNurse"
+        Me.btnNurse.Size = New System.Drawing.Size(214, 69)
+        Me.btnNurse.TabIndex = 4
+        Me.btnNurse.Text = "Nurse"
+        Me.btnNurse.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnProfile
         '
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button5.Location = New System.Drawing.Point(2, 475)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(215, 69)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "Profile"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnProfile.FlatAppearance.BorderSize = 0
+        Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProfile.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnProfile.Location = New System.Drawing.Point(2, 475)
+        Me.btnProfile.Name = "btnProfile"
+        Me.btnProfile.Size = New System.Drawing.Size(215, 69)
+        Me.btnProfile.TabIndex = 2
+        Me.btnProfile.Text = "Profile"
+        Me.btnProfile.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnAccount
         '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button6.Location = New System.Drawing.Point(1, 544)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(217, 69)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "Account"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnAccount.FlatAppearance.BorderSize = 0
+        Me.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAccount.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAccount.Location = New System.Drawing.Point(1, 544)
+        Me.btnAccount.Name = "btnAccount"
+        Me.btnAccount.Size = New System.Drawing.Size(217, 69)
+        Me.btnAccount.TabIndex = 5
+        Me.btnAccount.Text = "Account"
+        Me.btnAccount.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnLogOut
         '
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button7.Location = New System.Drawing.Point(4, 654)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(214, 40)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "Log out"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnLogOut.FlatAppearance.BorderSize = 0
+        Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnLogOut.Location = New System.Drawing.Point(4, 654)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Size = New System.Drawing.Size(214, 40)
+        Me.btnLogOut.TabIndex = 6
+        Me.btnLogOut.Text = "Log out"
+        Me.btnLogOut.UseVisualStyleBackColor = True
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button7)
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btnReport)
+        Me.Panel1.Controls.Add(Me.btnLogOut)
+        Me.Panel1.Controls.Add(Me.btnAccount)
+        Me.Panel1.Controls.Add(Me.btnProfile)
+        Me.Panel1.Controls.Add(Me.btnNurse)
+        Me.Panel1.Controls.Add(Me.btnSchedule)
+        Me.Panel1.Controls.Add(Me.btnCreate)
+        Me.Panel1.Controls.Add(Me.btnDashboard)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(-4, -8)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
@@ -336,29 +336,29 @@ Partial Class Nurse_Dashboard
         Me.Panel1.Size = New System.Drawing.Size(217, 1013)
         Me.Panel1.TabIndex = 0
         '
-        'Button2
+        'btnReport
         '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button2.Location = New System.Drawing.Point(3, 203)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(214, 69)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Create Shift"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnReport.FlatAppearance.BorderSize = 0
+        Me.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReport.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnReport.Location = New System.Drawing.Point(3, 407)
+        Me.btnReport.Name = "btnReport"
+        Me.btnReport.Size = New System.Drawing.Size(215, 69)
+        Me.btnReport.TabIndex = 7
+        Me.btnReport.Text = "Report"
+        Me.btnReport.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnCreate
         '
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button8.Location = New System.Drawing.Point(3, 407)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(215, 69)
-        Me.Button8.TabIndex = 7
-        Me.Button8.Text = "Report"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnCreate.FlatAppearance.BorderSize = 0
+        Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCreate.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCreate.Location = New System.Drawing.Point(3, 203)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(214, 69)
+        Me.btnCreate.TabIndex = 2
+        Me.btnCreate.Text = "Create Shift"
+        Me.btnCreate.UseVisualStyleBackColor = True
         '
         'Admin_Dashboard
         '
@@ -411,13 +411,13 @@ Partial Class Nurse_Dashboard
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents btnDashboard As Button
+    Friend WithEvents btnSchedule As Button
+    Friend WithEvents btnNurse As Button
+    Friend WithEvents btnProfile As Button
+    Friend WithEvents btnAccount As Button
+    Friend WithEvents btnLogOut As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnReport As Button
+    Friend WithEvents btnCreate As Button
 End Class

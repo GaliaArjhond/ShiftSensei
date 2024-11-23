@@ -25,27 +25,38 @@ Partial Class Admin_Account1
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnDashboard = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnNurse = New System.Windows.Forms.Button()
+        Me.btnProfile = New System.Windows.Forms.Button()
+        Me.btnAccount = New System.Windows.Forms.Button()
+        Me.btnLogOut = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.btnReport = New System.Windows.Forms.Button()
+        Me.btnCreate = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -53,18 +64,6 @@ Partial Class Admin_Account1
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -94,18 +93,18 @@ Partial Class Admin_Account1
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Shift Sensei"
         '
-        'Button1
+        'btnDashboard
         '
-        Me.Button1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button1.Location = New System.Drawing.Point(4, 135)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(214, 69)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Dashboard"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnDashboard.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnDashboard.FlatAppearance.BorderSize = 0
+        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnDashboard.Location = New System.Drawing.Point(4, 135)
+        Me.btnDashboard.Name = "btnDashboard"
+        Me.btnDashboard.Size = New System.Drawing.Size(214, 69)
+        Me.btnDashboard.TabIndex = 1
+        Me.btnDashboard.Text = "Dashboard"
+        Me.btnDashboard.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -119,65 +118,65 @@ Partial Class Admin_Account1
         Me.Button3.Text = "Schedule"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnNurse
         '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button4.Location = New System.Drawing.Point(3, 339)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(214, 69)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Nurse"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnNurse.FlatAppearance.BorderSize = 0
+        Me.btnNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNurse.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnNurse.Location = New System.Drawing.Point(3, 339)
+        Me.btnNurse.Name = "btnNurse"
+        Me.btnNurse.Size = New System.Drawing.Size(214, 69)
+        Me.btnNurse.TabIndex = 4
+        Me.btnNurse.Text = "Nurse"
+        Me.btnNurse.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnProfile
         '
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button5.Location = New System.Drawing.Point(2, 475)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(215, 69)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "Profile"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnProfile.FlatAppearance.BorderSize = 0
+        Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProfile.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnProfile.Location = New System.Drawing.Point(2, 475)
+        Me.btnProfile.Name = "btnProfile"
+        Me.btnProfile.Size = New System.Drawing.Size(215, 69)
+        Me.btnProfile.TabIndex = 2
+        Me.btnProfile.Text = "Profile"
+        Me.btnProfile.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnAccount
         '
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button6.Location = New System.Drawing.Point(1, 544)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(217, 69)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "Account"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnAccount.FlatAppearance.BorderSize = 0
+        Me.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAccount.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAccount.Location = New System.Drawing.Point(1, 544)
+        Me.btnAccount.Name = "btnAccount"
+        Me.btnAccount.Size = New System.Drawing.Size(217, 69)
+        Me.btnAccount.TabIndex = 5
+        Me.btnAccount.Text = "Account"
+        Me.btnAccount.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnLogOut
         '
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button7.Location = New System.Drawing.Point(4, 654)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(214, 40)
-        Me.Button7.TabIndex = 6
-        Me.Button7.Text = "Log out"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnLogOut.FlatAppearance.BorderSize = 0
+        Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnLogOut.Location = New System.Drawing.Point(4, 654)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Size = New System.Drawing.Size(214, 40)
+        Me.btnLogOut.TabIndex = 6
+        Me.btnLogOut.Text = "Log out"
+        Me.btnLogOut.UseVisualStyleBackColor = True
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button7)
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Controls.Add(Me.btnReport)
+        Me.Panel1.Controls.Add(Me.btnLogOut)
+        Me.Panel1.Controls.Add(Me.btnAccount)
+        Me.Panel1.Controls.Add(Me.btnProfile)
+        Me.Panel1.Controls.Add(Me.btnNurse)
         Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btnCreate)
+        Me.Panel1.Controls.Add(Me.btnDashboard)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(-4, -8)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
@@ -185,29 +184,29 @@ Partial Class Admin_Account1
         Me.Panel1.Size = New System.Drawing.Size(217, 1013)
         Me.Panel1.TabIndex = 0
         '
-        'Button8
+        'btnReport
         '
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button8.Location = New System.Drawing.Point(3, 407)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(215, 69)
-        Me.Button8.TabIndex = 7
-        Me.Button8.Text = "Report"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnReport.FlatAppearance.BorderSize = 0
+        Me.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReport.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnReport.Location = New System.Drawing.Point(3, 407)
+        Me.btnReport.Name = "btnReport"
+        Me.btnReport.Size = New System.Drawing.Size(215, 69)
+        Me.btnReport.TabIndex = 7
+        Me.btnReport.Text = "Report"
+        Me.btnReport.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnCreate
         '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button2.Location = New System.Drawing.Point(3, 203)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(214, 69)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Create Shift"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCreate.FlatAppearance.BorderSize = 0
+        Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCreate.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCreate.Location = New System.Drawing.Point(3, 203)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(214, 69)
+        Me.btnCreate.TabIndex = 2
+        Me.btnCreate.Text = "Create Shift"
+        Me.btnCreate.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -227,23 +226,50 @@ Partial Class Admin_Account1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Personal Info"
         '
-        'Label2
+        'Label17
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(29, 48)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 18)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Name:"
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(176, 221)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(63, 18)
+        Me.Label17.TabIndex = 7
+        Me.Label17.Text = "Label17"
         '
-        'Label3
+        'Label16
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(29, 108)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(50, 18)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Email:"
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(176, 162)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(63, 18)
+        Me.Label16.TabIndex = 6
+        Me.Label16.Text = "Label16"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(176, 108)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(63, 18)
+        Me.Label15.TabIndex = 5
+        Me.Label15.Text = "Label15"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(176, 48)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(63, 18)
+        Me.Label14.TabIndex = 4
+        Me.Label14.Text = "Label14"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(31, 221)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(70, 18)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Address:"
         '
         'Label4
         '
@@ -254,14 +280,23 @@ Partial Class Admin_Account1
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Phone Number:"
         '
-        'Label5
+        'Label3
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(31, 221)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(70, 18)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Address:"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(29, 108)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(50, 18)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Email:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(29, 48)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(52, 18)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Name:"
         '
         'GroupBox2
         '
@@ -280,6 +315,42 @@ Partial Class Admin_Account1
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Professional Info"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(159, 230)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(63, 18)
+        Me.Label25.TabIndex = 14
+        Me.Label25.Text = "Label25"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(159, 108)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(63, 18)
+        Me.Label24.TabIndex = 13
+        Me.Label24.Text = "Label23"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(159, 162)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(63, 18)
+        Me.Label23.TabIndex = 13
+        Me.Label23.Text = "Label23"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(159, 48)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(63, 18)
+        Me.Label22.TabIndex = 12
+        Me.Label22.Text = "Label22"
         '
         'Label6
         '
@@ -334,6 +405,42 @@ Partial Class Admin_Account1
         Me.GroupBox3.TabIndex = 5
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Security Settings: "
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(188, 221)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(63, 18)
+        Me.Label21.TabIndex = 11
+        Me.Label21.Text = "Label21"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(188, 48)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(63, 18)
+        Me.Label20.TabIndex = 10
+        Me.Label20.Text = "Label20"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(188, 108)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(63, 18)
+        Me.Label19.TabIndex = 9
+        Me.Label19.Text = "Label19"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(188, 162)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(63, 18)
+        Me.Label18.TabIndex = 8
+        Me.Label18.Text = "Label18"
         '
         'Label10
         '
@@ -398,114 +505,6 @@ Partial Class Admin_Account1
         Me.Button12.Text = "Deactivate Account"
         Me.Button12.UseVisualStyleBackColor = True
         '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(176, 48)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(63, 18)
-        Me.Label14.TabIndex = 4
-        Me.Label14.Text = "Label14"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(176, 108)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(63, 18)
-        Me.Label15.TabIndex = 5
-        Me.Label15.Text = "Label15"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(176, 162)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(63, 18)
-        Me.Label16.TabIndex = 6
-        Me.Label16.Text = "Label16"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(176, 221)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(63, 18)
-        Me.Label17.TabIndex = 7
-        Me.Label17.Text = "Label17"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(188, 162)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(63, 18)
-        Me.Label18.TabIndex = 8
-        Me.Label18.Text = "Label18"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(188, 108)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(63, 18)
-        Me.Label19.TabIndex = 9
-        Me.Label19.Text = "Label19"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(188, 48)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(63, 18)
-        Me.Label20.TabIndex = 10
-        Me.Label20.Text = "Label20"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(188, 221)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(63, 18)
-        Me.Label21.TabIndex = 11
-        Me.Label21.Text = "Label21"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(159, 48)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(63, 18)
-        Me.Label22.TabIndex = 12
-        Me.Label22.Text = "Label22"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(159, 162)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(63, 18)
-        Me.Label23.TabIndex = 13
-        Me.Label23.Text = "Label23"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(159, 108)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(63, 18)
-        Me.Label24.TabIndex = 13
-        Me.Label24.Text = "Label23"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(159, 230)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(63, 18)
-        Me.Label25.TabIndex = 14
-        Me.Label25.Text = "Label25"
-        '
         'Button11
         '
         Me.Button11.Location = New System.Drawing.Point(856, 529)
@@ -548,16 +547,15 @@ Partial Class Admin_Account1
     End Sub
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnDashboard As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents btnNurse As Button
+    Friend WithEvents btnProfile As Button
+    Friend WithEvents btnAccount As Button
+    Friend WithEvents btnLogOut As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents btnReport As Button
+    Friend WithEvents btnCreate As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label

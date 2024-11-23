@@ -1,3 +1,3 @@
-﻿Public Class Nurse_Dashboard
+﻿Public Class Admin_Dashboard
 
 End Class

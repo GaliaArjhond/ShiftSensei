@@ -116,13 +116,6 @@
     <Compile Include="AdminForm\Admin_EditShift.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm\Admin_Dashboard.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminForm\Admin_Dashboard.Designer.vb">
-      <DependentUpon>Admin_Dashboard.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LoginForm\forgotPassword.Designer.vb">
       <DependentUpon>forgotPassword.vb</DependentUpon>
     </Compile>
@@ -151,6 +144,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="AdminForm\Admin_Dashboard.Designer.vb">
+      <DependentUpon>Admin_Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\Admin_Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NurseForm\Nurse_Dashboard.Designer.vb">
+      <DependentUpon>Nurse_Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NurseForm\Nurse_Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdminForm\Admin_Allocate.resx">
@@ -174,9 +179,6 @@
     <EmbeddedResource Include="AdminForm\Admin_EditShift.resx">
       <DependentUpon>Admin_EditShift.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm\Admin_Dashboard.resx">
-      <DependentUpon>Admin_Dashboard.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm\forgotPassword.resx">
       <DependentUpon>forgotPassword.vb</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +190,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\Admin_Dashboard.resx">
+      <DependentUpon>Admin_Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NurseForm\Nurse_Dashboard.resx">
+      <DependentUpon>Nurse_Dashboard.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -202,8 +210,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NurseForm\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

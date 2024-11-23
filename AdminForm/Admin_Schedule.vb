@@ -1,3 +1,3 @@
-﻿Public Class Admin_Schedule
+﻿Public Class btnDashboard
 
 End Class
