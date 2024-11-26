@@ -150,10 +150,28 @@
     <Compile Include="AdminForm\Admin_Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="NurseForm\Nurse_Profile.Designer.vb">
+      <DependentUpon>Nurse_Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NurseForm\Nurse_Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NurseForm\Nurse_Account.Designer.vb">
+      <DependentUpon>Nurse_Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NurseForm\Nurse_Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NurseForm\Nurse_Dashboard.Designer.vb">
       <DependentUpon>Nurse_Dashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="NurseForm\Nurse_Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NurseForm\Nurse_Schedule.Designer.vb">
+      <DependentUpon>Nurse_Schedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NurseForm\Nurse_Schedule.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -194,8 +212,17 @@
     <EmbeddedResource Include="AdminForm\Admin_Dashboard.resx">
       <DependentUpon>Admin_Dashboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NurseForm\Nurse_Profile.resx">
+      <DependentUpon>Nurse_Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NurseForm\Nurse_Account.resx">
+      <DependentUpon>Nurse_Account.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NurseForm\Nurse_Dashboard.resx">
       <DependentUpon>Nurse_Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NurseForm\Nurse_Schedule.resx">
+      <DependentUpon>Nurse_Schedule.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Admin_Account1
-
+Partial Class Nurse_Account
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,27 +23,24 @@ Partial Class Admin_Account1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnDashboard = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.btnNurse = New System.Windows.Forms.Button()
         Me.btnProfile = New System.Windows.Forms.Button()
-        Me.btnAccount = New System.Windows.Forms.Button()
-        Me.btnLogOut = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnReport = New System.Windows.Forms.Button()
-        Me.btnCreate = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
+        Me.btnAccount = New System.Windows.Forms.Button()
+        Me.btnSchedule = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -60,6 +56,7 @@ Partial Class Admin_Account1
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -68,8 +65,6 @@ Partial Class Admin_Account1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -80,12 +75,22 @@ Partial Class Admin_Account1
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Location = New System.Drawing.Point(4, 4)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(214, 107)
         Me.Panel2.TabIndex = 1
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Location = New System.Drawing.Point(269, 4)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(973, 686)
+        Me.Panel3.TabIndex = 1
         '
         'Label1
         '
@@ -104,83 +109,44 @@ Partial Class Admin_Account1
         Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnDashboard.Location = New System.Drawing.Point(4, 135)
+        Me.btnDashboard.Location = New System.Drawing.Point(4, 230)
         Me.btnDashboard.Name = "btnDashboard"
         Me.btnDashboard.Size = New System.Drawing.Size(214, 69)
         Me.btnDashboard.TabIndex = 1
         Me.btnDashboard.Text = "Dashboard"
         Me.btnDashboard.UseVisualStyleBackColor = False
         '
-        'Button3
-        '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button3.Location = New System.Drawing.Point(3, 271)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(215, 69)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Schedule"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'btnNurse
-        '
-        Me.btnNurse.FlatAppearance.BorderSize = 0
-        Me.btnNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNurse.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnNurse.Location = New System.Drawing.Point(3, 339)
-        Me.btnNurse.Name = "btnNurse"
-        Me.btnNurse.Size = New System.Drawing.Size(214, 69)
-        Me.btnNurse.TabIndex = 4
-        Me.btnNurse.Text = "Nurse"
-        Me.btnNurse.UseVisualStyleBackColor = True
-        '
         'btnProfile
         '
         Me.btnProfile.FlatAppearance.BorderSize = 0
         Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProfile.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnProfile.Location = New System.Drawing.Point(2, 475)
+        Me.btnProfile.Location = New System.Drawing.Point(3, 366)
         Me.btnProfile.Name = "btnProfile"
         Me.btnProfile.Size = New System.Drawing.Size(215, 69)
-        Me.btnProfile.TabIndex = 2
+        Me.btnProfile.TabIndex = 3
         Me.btnProfile.Text = "Profile"
         Me.btnProfile.UseVisualStyleBackColor = True
         '
-        'btnAccount
+        'Button7
         '
-        Me.btnAccount.FlatAppearance.BorderSize = 0
-        Me.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAccount.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnAccount.Location = New System.Drawing.Point(1, 544)
-        Me.btnAccount.Name = "btnAccount"
-        Me.btnAccount.Size = New System.Drawing.Size(217, 69)
-        Me.btnAccount.TabIndex = 5
-        Me.btnAccount.Text = "Account"
-        Me.btnAccount.UseVisualStyleBackColor = True
-        '
-        'btnLogOut
-        '
-        Me.btnLogOut.FlatAppearance.BorderSize = 0
-        Me.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogOut.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnLogOut.Location = New System.Drawing.Point(4, 654)
-        Me.btnLogOut.Name = "btnLogOut"
-        Me.btnLogOut.Size = New System.Drawing.Size(214, 40)
-        Me.btnLogOut.TabIndex = 6
-        Me.btnLogOut.Text = "Log out"
-        Me.btnLogOut.UseVisualStyleBackColor = True
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button7.Location = New System.Drawing.Point(4, 654)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(214, 40)
+        Me.Button7.TabIndex = 6
+        Me.Button7.Text = "Log out"
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Panel1.Controls.Add(Me.btnReport)
-        Me.Panel1.Controls.Add(Me.btnLogOut)
+        Me.Panel1.Controls.Add(Me.Button7)
         Me.Panel1.Controls.Add(Me.btnAccount)
         Me.Panel1.Controls.Add(Me.btnProfile)
-        Me.Panel1.Controls.Add(Me.btnNurse)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.btnCreate)
+        Me.Panel1.Controls.Add(Me.btnSchedule)
         Me.Panel1.Controls.Add(Me.btnDashboard)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(-4, -8)
@@ -189,59 +155,29 @@ Partial Class Admin_Account1
         Me.Panel1.Size = New System.Drawing.Size(217, 1013)
         Me.Panel1.TabIndex = 0
         '
-        'btnReport
+        'btnAccount
         '
-        Me.btnReport.FlatAppearance.BorderSize = 0
-        Me.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReport.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnReport.Location = New System.Drawing.Point(3, 407)
-        Me.btnReport.Name = "btnReport"
-        Me.btnReport.Size = New System.Drawing.Size(215, 69)
-        Me.btnReport.TabIndex = 7
-        Me.btnReport.Text = "Report"
-        Me.btnReport.UseVisualStyleBackColor = True
+        Me.btnAccount.FlatAppearance.BorderSize = 0
+        Me.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAccount.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAccount.Location = New System.Drawing.Point(3, 434)
+        Me.btnAccount.Name = "btnAccount"
+        Me.btnAccount.Size = New System.Drawing.Size(214, 69)
+        Me.btnAccount.TabIndex = 4
+        Me.btnAccount.Text = "Account"
+        Me.btnAccount.UseVisualStyleBackColor = True
         '
-        'btnCreate
+        'btnSchedule
         '
-        Me.btnCreate.FlatAppearance.BorderSize = 0
-        Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCreate.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnCreate.Location = New System.Drawing.Point(3, 203)
-        Me.btnCreate.Name = "btnCreate"
-        Me.btnCreate.Size = New System.Drawing.Size(214, 69)
-        Me.btnCreate.TabIndex = 2
-        Me.btnCreate.Text = "Create Shift"
-        Me.btnCreate.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(226, 541)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(134, 25)
-        Me.Button9.TabIndex = 6
-        Me.Button9.Text = "Edit"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(270, 184)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(153, 27)
-        Me.Button10.TabIndex = 7
-        Me.Button10.Text = "Change Password"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(720, 583)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(161, 37)
-        Me.Button12.TabIndex = 9
-        Me.Button12.Text = "Create Account"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.btnSchedule.FlatAppearance.BorderSize = 0
+        Me.btnSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSchedule.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnSchedule.Location = New System.Drawing.Point(3, 298)
+        Me.btnSchedule.Name = "btnSchedule"
+        Me.btnSchedule.Size = New System.Drawing.Size(214, 69)
+        Me.btnSchedule.TabIndex = 2
+        Me.btnSchedule.Text = "Schedule"
+        Me.btnSchedule.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -253,10 +189,10 @@ Partial Class Admin_Account1
         Me.GroupBox3.Controls.Add(Me.Label11)
         Me.GroupBox3.Controls.Add(Me.Label12)
         Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(701, 323)
+        Me.GroupBox3.Location = New System.Drawing.Point(722, 335)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(429, 224)
-        Me.GroupBox3.TabIndex = 18
+        Me.GroupBox3.TabIndex = 23
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Security"
         '
@@ -296,6 +232,16 @@ Partial Class Admin_Account1
         Me.Label10.TabIndex = 3
         Me.Label10.Text = "Account Status:"
         '
+        'Button10
+        '
+        Me.Button10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Location = New System.Drawing.Point(270, 184)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(153, 27)
+        Me.Button10.TabIndex = 7
+        Me.Button10.Text = "Change Password"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -326,12 +272,22 @@ Partial Class Admin_Account1
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(701, 42)
+        Me.GroupBox2.Location = New System.Drawing.Point(722, 42)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(429, 257)
-        Me.GroupBox2.TabIndex = 17
+        Me.GroupBox2.TabIndex = 22
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Professional Info"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(289, 221)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(134, 23)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Edit"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label25
         '
@@ -423,10 +379,10 @@ Partial Class Admin_Account1
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(248, 42)
+        Me.GroupBox1.Location = New System.Drawing.Point(269, 42)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(377, 578)
-        Me.GroupBox1.TabIndex = 16
+        Me.GroupBox1.TabIndex = 21
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Personal Info"
         '
@@ -483,6 +439,16 @@ Partial Class Admin_Account1
         Me.Label26.Size = New System.Drawing.Size(59, 16)
         Me.Label26.TabIndex = 8
         Me.Label26.Text = "Gender:"
+        '
+        'Button9
+        '
+        Me.Button9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(226, 541)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(134, 25)
+        Me.Button9.TabIndex = 6
+        Me.Button9.Text = "Edit"
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'Label17
         '
@@ -556,43 +522,21 @@ Partial Class Admin_Account1
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Name:"
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(289, 221)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(134, 23)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Edit"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(944, 583)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(161, 37)
-        Me.Button2.TabIndex = 19
-        Me.Button2.Text = "Delete Account"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Admin_Account1
+        'Nurse_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1234, 681)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "Admin_Account1"
+        Me.Name = "Nurse_Account"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Admin Account"
+        Me.Text = "Nurse Dashboard"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -605,28 +549,25 @@ Partial Class Admin_Account1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents btnDashboard As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents btnNurse As Button
     Friend WithEvents btnProfile As Button
+    Friend WithEvents Button7 As Button
     Friend WithEvents btnAccount As Button
-    Friend WithEvents btnLogOut As Button
+    Friend WithEvents btnSchedule As Button
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents btnReport As Button
-    Friend WithEvents btnCreate As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button12 As Button
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Label21 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents Button10 As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Button1 As Button
     Friend WithEvents Label25 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label23 As Label
@@ -642,6 +583,7 @@ Partial Class Admin_Account1
     Friend WithEvents Label29 As Label
     Friend WithEvents Label27 As Label
     Friend WithEvents Label26 As Label
+    Friend WithEvents Button9 As Button
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
@@ -650,6 +592,4 @@ Partial Class Admin_Account1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
 End Class

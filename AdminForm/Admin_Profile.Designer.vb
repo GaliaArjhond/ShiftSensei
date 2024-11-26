@@ -34,7 +34,13 @@ Partial Class Admin_Profile
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnReport = New System.Windows.Forms.Button()
         Me.btnCreate = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -42,30 +48,23 @@ Partial Class Admin_Profile
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -212,284 +211,284 @@ Partial Class Admin_Profile
         Me.btnCreate.Text = "Create Shift"
         Me.btnCreate.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'Label31
         '
-        Me.GroupBox1.Controls.Add(Me.Label17)
-        Me.GroupBox1.Controls.Add(Me.Label16)
-        Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.Label14)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(257, 45)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(451, 299)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Personal Info"
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(211, 418)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(53, 16)
+        Me.Label31.TabIndex = 13
+        Me.Label31.Text = "Label31"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(38, 416)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(41, 19)
+        Me.Label30.TabIndex = 12
+        Me.Label30.Text = "Bio:"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(210, 171)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(69, 19)
+        Me.Label28.TabIndex = 11
+        Me.Label28.Text = "Label28"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(38, 171)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(110, 19)
+        Me.Label29.TabIndex = 10
+        Me.Label29.Text = "Date of Birth:"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(210, 121)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(69, 19)
+        Me.Label27.TabIndex = 9
+        Me.Label27.Text = "Label27"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(36, 121)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(71, 19)
+        Me.Label26.TabIndex = 8
+        Me.Label26.Text = "Gender:"
+        '
+        'Button9
+        '
+        Me.Button9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(300, 582)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(134, 25)
+        Me.Button9.TabIndex = 6
+        Me.Button9.Text = "Edit"
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(176, 221)
+        Me.Label17.Location = New System.Drawing.Point(210, 357)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(63, 18)
+        Me.Label17.Size = New System.Drawing.Size(69, 19)
         Me.Label17.TabIndex = 7
         Me.Label17.Text = "Label17"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(176, 162)
+        Me.Label16.Location = New System.Drawing.Point(210, 299)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(63, 18)
+        Me.Label16.Size = New System.Drawing.Size(69, 19)
         Me.Label16.TabIndex = 6
         Me.Label16.Text = "Label16"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(176, 108)
+        Me.Label15.Location = New System.Drawing.Point(210, 239)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(63, 18)
+        Me.Label15.Size = New System.Drawing.Size(69, 19)
         Me.Label15.TabIndex = 5
         Me.Label15.Text = "Label15"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(176, 48)
+        Me.Label14.Location = New System.Drawing.Point(210, 65)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(63, 18)
+        Me.Label14.Size = New System.Drawing.Size(69, 19)
         Me.Label14.TabIndex = 4
         Me.Label14.Text = "Label14"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(31, 221)
+        Me.Label5.Location = New System.Drawing.Point(38, 357)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(70, 18)
+        Me.Label5.Size = New System.Drawing.Size(79, 19)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "Address:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(31, 162)
+        Me.Label4.Location = New System.Drawing.Point(38, 299)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(118, 18)
+        Me.Label4.Size = New System.Drawing.Size(130, 19)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Phone Number:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(29, 108)
+        Me.Label3.Location = New System.Drawing.Point(38, 239)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(50, 18)
+        Me.Label3.Size = New System.Drawing.Size(57, 19)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Email:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(36, 65)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(59, 19)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Name:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(29, 48)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(734, 58)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 18)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Name:"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label25)
-        Me.GroupBox2.Controls.Add(Me.Label24)
-        Me.GroupBox2.Controls.Add(Me.Label23)
-        Me.GroupBox2.Controls.Add(Me.Label22)
-        Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(748, 45)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(451, 299)
-        Me.GroupBox2.TabIndex = 8
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Professional Info"
+        Me.Label2.Size = New System.Drawing.Size(0, 24)
+        Me.Label2.TabIndex = 19
         '
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(159, 230)
+        Me.Label25.Location = New System.Drawing.Point(163, 279)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(63, 18)
+        Me.Label25.Size = New System.Drawing.Size(69, 19)
         Me.Label25.TabIndex = 14
         Me.Label25.Text = "Label25"
         '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(159, 108)
+        Me.Label24.Location = New System.Drawing.Point(163, 134)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(63, 18)
+        Me.Label24.Size = New System.Drawing.Size(69, 19)
         Me.Label24.TabIndex = 13
         Me.Label24.Text = "Label23"
         '
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(159, 162)
+        Me.Label23.Location = New System.Drawing.Point(163, 207)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(63, 18)
+        Me.Label23.Size = New System.Drawing.Size(69, 19)
         Me.Label23.TabIndex = 13
         Me.Label23.Text = "Label23"
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(159, 48)
+        Me.Label22.Location = New System.Drawing.Point(163, 65)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(63, 18)
+        Me.Label22.Size = New System.Drawing.Size(69, 19)
         Me.Label22.TabIndex = 12
         Me.Label22.Text = "Label22"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(31, 221)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(86, 18)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Availability:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(31, 162)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(93, 18)
-        Me.Label7.TabIndex = 2
-        Me.Label7.Text = "Experience:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(29, 108)
+        Me.Label8.Location = New System.Drawing.Point(30, 279)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(70, 18)
-        Me.Label8.TabIndex = 1
-        Me.Label8.Text = "Position:"
+        Me.Label8.Size = New System.Drawing.Size(96, 19)
+        Me.Label8.TabIndex = 3
+        Me.Label8.Text = "Availability:"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(29, 48)
+        Me.Label9.Location = New System.Drawing.Point(29, 207)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(95, 18)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Department:"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.Label21)
-        Me.GroupBox3.Controls.Add(Me.Label20)
-        Me.GroupBox3.Controls.Add(Me.Label19)
-        Me.GroupBox3.Controls.Add(Me.Label18)
-        Me.GroupBox3.Controls.Add(Me.Label10)
-        Me.GroupBox3.Controls.Add(Me.Label11)
-        Me.GroupBox3.Controls.Add(Me.Label12)
-        Me.GroupBox3.Controls.Add(Me.Label13)
-        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(257, 370)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(451, 299)
-        Me.GroupBox3.TabIndex = 15
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Security Settings: "
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(188, 221)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(63, 18)
-        Me.Label21.TabIndex = 11
-        Me.Label21.Text = "Label21"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(188, 48)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(63, 18)
-        Me.Label20.TabIndex = 10
-        Me.Label20.Text = "Label20"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(188, 108)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(63, 18)
-        Me.Label19.TabIndex = 9
-        Me.Label19.Text = "Label19"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(188, 162)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(63, 18)
-        Me.Label18.TabIndex = 8
-        Me.Label18.Text = "Label18"
+        Me.Label9.Size = New System.Drawing.Size(101, 19)
+        Me.Label9.TabIndex = 2
+        Me.Label9.Text = "Experience:"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(31, 221)
+        Me.Label10.Location = New System.Drawing.Point(28, 134)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(118, 18)
-        Me.Label10.TabIndex = 3
-        Me.Label10.Text = "Account Status:"
+        Me.Label10.Size = New System.Drawing.Size(78, 19)
+        Me.Label10.TabIndex = 1
+        Me.Label10.Text = "Position:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(31, 162)
+        Me.Label11.Location = New System.Drawing.Point(29, 65)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(139, 18)
-        Me.Label11.TabIndex = 2
-        Me.Label11.Text = "Security Question:"
+        Me.Label11.Size = New System.Drawing.Size(104, 19)
+        Me.Label11.TabIndex = 0
+        Me.Label11.Text = "Department:"
         '
-        'Label12
+        'GroupBox1
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(29, 108)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(81, 18)
-        Me.Label12.TabIndex = 1
-        Me.Label12.Text = "Password:"
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label26)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Button9)
+        Me.GroupBox1.Controls.Add(Me.Label14)
+        Me.GroupBox1.Controls.Add(Me.Label27)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label31)
+        Me.GroupBox1.Controls.Add(Me.Label15)
+        Me.GroupBox1.Controls.Add(Me.Label29)
+        Me.GroupBox1.Controls.Add(Me.Label16)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label30)
+        Me.GroupBox1.Controls.Add(Me.Label17)
+        Me.GroupBox1.Controls.Add(Me.Label28)
+        Me.GroupBox1.Location = New System.Drawing.Point(288, 36)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(440, 613)
+        Me.GroupBox1.TabIndex = 20
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Personal Information"
         '
-        'Label13
+        'GroupBox2
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(29, 48)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(95, 18)
-        Me.Label13.TabIndex = 0
-        Me.Label13.Text = "Department:"
+        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.Label25)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.Label23)
+        Me.GroupBox2.Controls.Add(Me.Label22)
+        Me.GroupBox2.Controls.Add(Me.Label24)
+        Me.GroupBox2.Location = New System.Drawing.Point(767, 45)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(439, 426)
+        Me.GroupBox2.TabIndex = 21
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Professional Information"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(299, 395)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(134, 25)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Edit"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Admin_Profile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1234, 681)
-        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -504,9 +503,8 @@ Partial Class Admin_Profile
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Panel2 As Panel
@@ -521,7 +519,13 @@ Partial Class Admin_Profile
     Friend WithEvents btnReport As Button
     Friend WithEvents btnCreate As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Button9 As Button
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
@@ -529,23 +533,17 @@ Partial Class Admin_Profile
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label7 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label25 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents Label22 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label18 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Button1 As Button
 End Class
