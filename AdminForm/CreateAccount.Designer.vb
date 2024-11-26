@@ -42,9 +42,6 @@ Partial Class CreateAccount
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -66,6 +63,9 @@ Partial Class CreateAccount
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -238,11 +238,11 @@ Partial Class CreateAccount
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.ComboBox4)
+        Me.GroupBox2.Controls.Add(Me.ComboBox3)
+        Me.GroupBox2.Controls.Add(Me.ComboBox2)
         Me.GroupBox2.Controls.Add(Me.TextBox12)
         Me.GroupBox2.Controls.Add(Me.Label18)
-        Me.GroupBox2.Controls.Add(Me.TextBox9)
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
@@ -259,7 +259,7 @@ Partial Class CreateAccount
         Me.TextBox12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox12.Location = New System.Drawing.Point(28, 240)
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(268, 22)
+        Me.TextBox12.Size = New System.Drawing.Size(277, 22)
         Me.TextBox12.TabIndex = 20
         '
         'Label18
@@ -270,30 +270,6 @@ Partial Class CreateAccount
         Me.Label18.Size = New System.Drawing.Size(115, 16)
         Me.Label18.TabIndex = 19
         Me.Label18.Text = "License Number:"
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(32, 182)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(268, 22)
-        Me.TextBox9.TabIndex = 18
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(32, 124)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(268, 22)
-        Me.TextBox8.TabIndex = 17
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(32, 67)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(268, 22)
-        Me.TextBox7.TabIndex = 16
         '
         'Label7
         '
@@ -355,6 +331,7 @@ Partial Class CreateAccount
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(27, 62)
         Me.ComboBox1.Name = "ComboBox1"
@@ -491,6 +468,33 @@ Partial Class CreateAccount
         Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(32, 67)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(273, 24)
+        Me.ComboBox2.TabIndex = 21
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(32, 124)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(273, 24)
+        Me.ComboBox3.TabIndex = 22
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(32, 182)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(273, 24)
+        Me.ComboBox4.TabIndex = 23
+        '
         'CreateAccount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -542,9 +546,6 @@ Partial Class CreateAccount
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
@@ -568,4 +569,7 @@ Partial Class CreateAccount
     Friend WithEvents Label18 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class
