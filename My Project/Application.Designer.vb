@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ShiftSensei.Login
+            Me.MainForm = Global.ShiftSensei.CreateAccount
         End Sub
     End Class
 End Namespace
