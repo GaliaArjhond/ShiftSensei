@@ -40,6 +40,9 @@ Partial Class CreateAccount
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -61,11 +64,8 @@ Partial Class CreateAccount
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCreate = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -254,12 +254,39 @@ Partial Class CreateAccount
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Professional Info"
         '
+        'ComboBox4
+        '
+        Me.ComboBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(32, 182)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(273, 24)
+        Me.ComboBox4.TabIndex = 23
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(32, 124)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(273, 24)
+        Me.ComboBox3.TabIndex = 22
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(32, 67)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(273, 24)
+        Me.ComboBox2.TabIndex = 21
+        '
         'TextBox12
         '
         Me.TextBox12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox12.Location = New System.Drawing.Point(28, 240)
+        Me.TextBox12.Location = New System.Drawing.Point(32, 240)
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(277, 22)
+        Me.TextBox12.Size = New System.Drawing.Size(273, 22)
         Me.TextBox12.TabIndex = 20
         '
         'Label18
@@ -385,6 +412,7 @@ Partial Class CreateAccount
         'DateTimePicker5
         '
         Me.DateTimePicker5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.DateTimePicker5.Location = New System.Drawing.Point(34, 301)
         Me.DateTimePicker5.Name = "DateTimePicker5"
         Me.DateTimePicker5.Size = New System.Drawing.Size(268, 22)
@@ -393,6 +421,7 @@ Partial Class CreateAccount
         'DateTimePicker4
         '
         Me.DateTimePicker4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.DateTimePicker4.Location = New System.Drawing.Point(32, 225)
         Me.DateTimePicker4.Name = "DateTimePicker4"
         Me.DateTimePicker4.Size = New System.Drawing.Size(268, 22)
@@ -450,50 +479,23 @@ Partial Class CreateAccount
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Start Date:"
         '
-        'Button1
+        'btnCreate
         '
-        Me.Button1.Location = New System.Drawing.Point(36, 913)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(233, 31)
-        Me.Button1.TabIndex = 33
-        Me.Button1.Text = "Create Account"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCreate.Location = New System.Drawing.Point(36, 913)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(233, 52)
+        Me.btnCreate.TabIndex = 33
+        Me.btnCreate.Text = "Create Account"
+        Me.btnCreate.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(549, 913)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(199, 31)
+        Me.Button2.Size = New System.Drawing.Size(199, 52)
         Me.Button2.TabIndex = 34
         Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(32, 67)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(273, 24)
-        Me.ComboBox2.TabIndex = 21
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(32, 124)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(273, 24)
-        Me.ComboBox3.TabIndex = 22
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(32, 182)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(273, 24)
-        Me.ComboBox4.TabIndex = 23
         '
         'CreateAccount
         '
@@ -502,7 +504,7 @@ Partial Class CreateAccount
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(810, 653)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCreate)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox4)
@@ -567,7 +569,7 @@ Partial Class CreateAccount
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents Label18 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCreate As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox

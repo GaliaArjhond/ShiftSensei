@@ -280,6 +280,7 @@ Partial Class Admin_CreateShift
         '
         'DateTimePicker4
         '
+        Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.DateTimePicker4.Location = New System.Drawing.Point(632, 111)
         Me.DateTimePicker4.Name = "DateTimePicker4"
         Me.DateTimePicker4.Size = New System.Drawing.Size(284, 26)
@@ -287,6 +288,7 @@ Partial Class Admin_CreateShift
         '
         'DateTimePicker3
         '
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.DateTimePicker3.Location = New System.Drawing.Point(632, 54)
         Me.DateTimePicker3.Name = "DateTimePicker3"
         Me.DateTimePicker3.Size = New System.Drawing.Size(284, 26)

@@ -22,12 +22,12 @@ Partial Class Admin_Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -53,6 +53,7 @@ Partial Class Admin_Dashboard
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnReport = New System.Windows.Forms.Button()
         Me.btnCreate = New System.Windows.Forms.Button()
+        Me.btnconnect = New System.Windows.Forms.Button()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
@@ -65,33 +66,33 @@ Partial Class Admin_Dashboard
         '
         'Chart2
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend3)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart2.Legends.Add(Legend1)
         Me.Chart2.Location = New System.Drawing.Point(284, 259)
         Me.Chart2.Name = "Chart2"
-        Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Me.Chart2.Series.Add(Series3)
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Chart2.Series.Add(Series1)
         Me.Chart2.Size = New System.Drawing.Size(395, 300)
         Me.Chart2.TabIndex = 10
         Me.Chart2.Text = "Chart2"
         '
         'Chart1
         '
-        ChartArea4.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea4)
-        Legend4.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend4)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(767, 259)
         Me.Chart1.Name = "Chart1"
-        Series4.ChartArea = "ChartArea1"
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series1"
-        Me.Chart1.Series.Add(Series4)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.Chart1.Series.Add(Series2)
         Me.Chart1.Size = New System.Drawing.Size(395, 300)
         Me.Chart1.TabIndex = 9
         Me.Chart1.Text = "Chart1"
@@ -360,11 +361,21 @@ Partial Class Admin_Dashboard
         Me.btnCreate.Text = "Create Shift"
         Me.btnCreate.UseVisualStyleBackColor = True
         '
+        'btnconnect
+        '
+        Me.btnconnect.Location = New System.Drawing.Point(540, 605)
+        Me.btnconnect.Name = "btnconnect"
+        Me.btnconnect.Size = New System.Drawing.Size(174, 64)
+        Me.btnconnect.TabIndex = 11
+        Me.btnconnect.Text = "Connection"
+        Me.btnconnect.UseVisualStyleBackColor = True
+        '
         'Admin_Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1234, 681)
+        Me.Controls.Add(Me.btnconnect)
         Me.Controls.Add(Me.Chart2)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.Panel6)
@@ -420,4 +431,5 @@ Partial Class Admin_Dashboard
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnReport As Button
     Friend WithEvents btnCreate As Button
+    Friend WithEvents btnconnect As Button
 End Class

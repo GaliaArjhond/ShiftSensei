@@ -23,16 +23,18 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.btnForgot = New System.Windows.Forms.Button()
+        Me.EventLog1 = New System.Diagnostics.EventLog()
         Me.Panel1.SuspendLayout()
+        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -45,17 +47,6 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(400, 561)
         Me.Panel1.TabIndex = 0
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(79, 59)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(221, 37)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Shift Sensei: "
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -66,6 +57,17 @@ Partial Class Login
         Me.Label2.Size = New System.Drawing.Size(311, 37)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Scheduling System"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(79, 59)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(221, 37)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Shift Sensei: "
         '
         'Label3
         '
@@ -96,6 +98,7 @@ Partial Class Login
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(467, 196)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(453, 26)
@@ -103,36 +106,43 @@ Partial Class Login
         '
         'TextBox2
         '
+        Me.TextBox2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(467, 312)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(453, 26)
         Me.TextBox2.TabIndex = 5
         '
-        'Button1
+        'btnLogin
         '
-        Me.Button1.Location = New System.Drawing.Point(706, 401)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(214, 34)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnLogin.FlatAppearance.BorderSize = 0
+        Me.btnLogin.Location = New System.Drawing.Point(702, 392)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(218, 43)
+        Me.btnLogin.TabIndex = 6
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnForgot
         '
-        Me.Button2.Location = New System.Drawing.Point(706, 465)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(214, 34)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Forgot Password"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnForgot.FlatAppearance.BorderSize = 0
+        Me.btnForgot.Location = New System.Drawing.Point(702, 456)
+        Me.btnForgot.Name = "btnForgot"
+        Me.btnForgot.Size = New System.Drawing.Size(218, 43)
+        Me.btnForgot.TabIndex = 7
+        Me.btnForgot.Text = "Forgot Password"
+        Me.btnForgot.UseVisualStyleBackColor = True
+        '
+        'EventLog1
+        '
+        Me.EventLog1.SynchronizingObject = Me
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 561)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnForgot)
+        Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label5)
@@ -141,12 +151,13 @@ Partial Class Login
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -160,6 +171,7 @@ Partial Class Login
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents btnForgot As Button
+    Friend WithEvents EventLog1 As EventLog
 End Class
